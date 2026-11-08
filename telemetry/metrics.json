@@ -1,0 +1,8 @@
+{
+  "last_sync": "2026-11-08T02:25:34.031020+00:00",
+  "date": "2026-11-08",
+  "engine_status": "healthy",
+  "speculative_guard_active": true,
+  "active_schemas_monitored": 21,
+  "replay_verification_rate": 1.0
+}
