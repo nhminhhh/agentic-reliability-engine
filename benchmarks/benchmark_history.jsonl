@@ -1,1 +1,2 @@
 {"timestamp": "2026-11-08T02:08:15.481821+00:00", "date": "2026-11-08", "eval_dataset": "agentic_tool_eval_v1", "total_trajectories": 50, "goal_completion_rate": 0.96, "tool_redundancy_rate": 0.04, "avg_latency_ms": 68.88, "reliability_index": 92.9}
+{"run_id": "eval_f91b97ce", "timestamp": "2026-11-08T13:11:27.729178+00:00", "date": "2026-11-08", "eval_dataset": "agentic_tool_eval_v2", "total_trajectories": 50, "goal_completion_rate": 0.989, "tool_redundancy_rate": 0.045, "avg_latency_ms": 43.77, "reliability_index": 94.3}
