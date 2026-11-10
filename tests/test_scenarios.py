@@ -73,3 +73,18 @@ def test_speculative_verification_2026_11_10_c94d53():
     guard.register_tool(spec)
     res = guard.validate("api_fetcher_2026_11_10_c94d53", {"target": "https://api.internal/v1", "retry_count": 2})
     assert res.is_valid is True
+
+
+def test_speculative_verification_2026_11_10_a8d47d():
+    from agentic_reliability.verifier.schema_guard import SchemaGuard, ToolSchemaSpec
+    guard = SchemaGuard()
+    spec = ToolSchemaSpec(
+        tool_name="api_fetcher_2026_11_10_a8d47d",
+        required_params={"target"},
+        allowed_params={"target", "retry_count"},
+        param_types={"target": str, "retry_count": int},
+        param_ranges={"retry_count": (0, 5)},
+    )
+    guard.register_tool(spec)
+    res = guard.validate("api_fetcher_2026_11_10_a8d47d", {"target": "https://api.internal/v1", "retry_count": 2})
+    assert res.is_valid is True
