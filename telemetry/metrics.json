@@ -1,9 +1,9 @@
 {
-  "last_sync": "2026-11-11T13:00:11.369954+00:00",
-  "date": "2026-11-11",
+  "last_sync": "2026-11-12T13:00:07.246382+00:00",
+  "date": "2026-11-12",
   "engine_status": "healthy",
   "speculative_guard_active": true,
-  "active_schemas_monitored": 25,
+  "active_schemas_monitored": 29,
   "replay_verification_rate": 1.0,
-  "mean_trajectory_latency_ms": 61.66
+  "mean_trajectory_latency_ms": 73.1
 }
