@@ -185,8 +185,18 @@ def main():
         time.sleep(1)
 
     print("Pushing commits to remote origin...")
-    run_git(["push", "origin", "main"])
-    print("Successfully pushed 5 commits to GitHub!")
+    pushed = False
+    for attempt in range(1, 4):
+        try:
+            run_git(["push", "origin", "main"])
+            pushed = True
+            print("Successfully pushed commits to GitHub!")
+            break
+        except Exception as e:
+            print(f"Push attempt {attempt} failed: {e}. Retrying in 5s...")
+            time.sleep(5)
+    if not pushed:
+        print("Warning: Could not push commits to remote right now. Commits remain saved locally and will push on next sync.")
 
 
 if __name__ == "__main__":
