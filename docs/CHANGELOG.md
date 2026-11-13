@@ -34,3 +34,7 @@ All notable improvements to the Agentic Reliability Engine are documented here.
 ### [2026-11-12]
 - Speculative AST bounds check optimization.
 - Synchronized daily regression tests and benchmark metrics.
+
+### [2026-11-13]
+- Deterministic trajectory hash verification pass.
+- Synchronized daily regression tests and benchmark metrics.
